@@ -12,13 +12,27 @@ A collection of beginner-friendly Python scripts for demonstrating core concepts
  -'math module.py':Demonstartes importing the math module for basic operations.
 -'coin flip.py':Uses random module to simulate coin flip.
 -'dice_roll_random module.py'-Uses random module to simulate dice rolls.
--'list generator_randome_module:
+-'list generator_randome_module: generates a list of n random integers between a user-defined range (say a to b)
 
  -**'Bank Account Management System (OOP)** 
 
 -'Name Mangling.py:'Demonstartes use of private varibale using name mangling'
 -'bank_account_withoutprivate.py': Demonstartes all public- variable
 -'bank_account_withprivate.py':usese private varibale to demonstrate encapsulation.
+
+-**24 Hour Timer Utility (timer.py)**
+A simple digital clock simulation that teaches essential Object-Oriented Programming (OOP) and string formatting concepts.
+
+#### What it does:
+* **Tracks Time**: Simulates a 24-hour military clock using simple variables.
+* **Auto-Formats**: Automatically prints the time as a clean `hh:mm:ss` text string with leading zeros.
+* **Ticks Forward/Backward**: Includes methods to increase or decrease the time by one second while safely wrapping around midnights.
+* **Input Protection**: Validates data to stop users from entering fake times like 25 hours or 70 minutes.
+
+#### Core Python Concepts Shown:
+* **The `__init__` constructor** with default parameter values.
+* **The `__str__` magic method** for automatic string conversion.
+* **Defensive programming** using `raise ValueError` to prevent broken data.
     - 
     -
 
