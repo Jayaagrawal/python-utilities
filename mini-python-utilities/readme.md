@@ -1,4 +1,4 @@
-# Mini Python Utilities
+# I]Mini Python Utilities
 
 A collection of beginner-friendly Python scripts for demonstrating core concepts
 
@@ -14,13 +14,13 @@ A collection of beginner-friendly Python scripts for demonstrating core concepts
 -'dice_roll_random module.py'-Uses random module to simulate dice rolls.
 -'list generator_randome_module: generates a list of n random integers between a user-defined range (say a to b)
 
- -**'Bank Account Management System (OOP)** 
+ -**II]'Bank Account Management System (OOP)** 
 
 -'Name Mangling.py:'Demonstartes use of private varibale using name mangling'
 -'bank_account_withoutprivate.py': Demonstartes all public- variable
 -'bank_account_withprivate.py':usese private varibale to demonstrate encapsulation.
 
--**24 Hour Timer Utility (timer.py)**
+-**III]24 Hour Timer Utility (timer.py)**
 A simple digital clock simulation that teaches essential Object-Oriented Programming (OOP) and string formatting concepts.
 
 #### What it does:
@@ -35,6 +35,20 @@ A simple digital clock simulation that teaches essential Object-Oriented Program
 * **Defensive programming** using `raise ValueError` to prevent broken data.
     - 
     -
+### IV] Weekday Shifter Utility (`weekly.py`)
+
+A  weekday tracking utility that showcases custom exception handling, strictly private properties, and  mathematics.
+
+#### What it does:
+* **Flexible Parsing**: Accepts shorthand inputs (`Mon`) or full words (`Monday`), automatically normalizing them to a clean 3-letter layout.
+* **Date Shifting**: Moves the calendar forward or backward by any integer number of days, wrapping around weeks automatically using modulo arithmetic (`% 7`).
+* **Custom Exceptions**: Implements a  `WeekdayError` class to safely reject impossible inputs like "Funday".
+* **Weekend Checker**: Includes a helper tool (`is_weekend()`) to quickly identify if the active day is a weekend or a working day.
+
+#### Core Python Concepts Shown:
+* **Custom Exception Inheritance** (`class WeekdayError(Exception)`).
+* **Strictly Private Instance Variables** using double underscores (`self.__day`).
+* **Modular Code Protection** using the `if __name__ == '__main__':` structural safety shield.
 
 
 ## How to Use
