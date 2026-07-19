@@ -35,20 +35,9 @@ A simple digital clock simulation that teaches essential Object-Oriented Program
 * **Defensive programming** using `raise ValueError` to prevent broken data.
     - 
     -
-### IV] Weekday Shifter Utility (`weekly.py`)
 
-A  weekday tracking utility that showcases custom exception handling, strictly private properties, and  mathematics.
 
-#### What it does:
-* **Flexible Parsing**: Accepts shorthand inputs (`Mon`) or full words (`Monday`), automatically normalizing them to a clean 3-letter layout.
-* **Date Shifting**: Moves the calendar forward or backward by any integer number of days, wrapping around weeks automatically using modulo arithmetic (`% 7`).
-* **Custom Exceptions**: Implements a  `WeekdayError` class to safely reject impossible inputs like "Funday".
-* **Weekend Checker**: Includes a helper tool (`is_weekend()`) to quickly identify if the active day is a weekend or a working day.
 
-#### Core Python Concepts Shown:
-* **Custom Exception Inheritance** (`class WeekdayError(Exception)`).
-* **Strictly Private Instance Variables** using double underscores (`self.__day`).
-* **Modular Code Protection** using the `if __name__ == '__main__':` structural safety shield.
 
 
 ## How to Use
