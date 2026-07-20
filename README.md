@@ -7,6 +7,7 @@ This repository collects small Python programs and utilities that demonstrate:
 ## 📂 Folder Structure
 - `numpy_electrical` → AC waveform simulation
 - `mini-python-utilities'-A collection of beginner-friendly Python scripts for demonstrating core concepts
+- 'oops'-a collection of beginner-friendly Python scripts designed to visualize and demonstrate core Object-Oriented Programming principles.
 - `
 
 ## 🎯 Purpose
