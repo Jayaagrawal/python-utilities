@@ -30,7 +30,7 @@ if __name__=='__main__':
     base_pck=Package(weight=3)
     print(f'Base Package cost (3kg):              {base_pck.calculate_cost()}')
 
-    """# Test 2 Crash case without super
+    # Test 2 Crash case without super
     print("Testing cost calculation without super")
     broken_pck=StandardExpress(weight=3)
     try:
@@ -38,7 +38,7 @@ if __name__=='__main__':
         print(broken_pck.calculate_cost())    
     except RecursionError:
         # catching the error
-        print("Success!Caught expected crash")"""
+        print("Success!Caught expected crash")
             
     # Test 3 Test Success Case with super
     priority_pck=PriorityExpress(weight=3)

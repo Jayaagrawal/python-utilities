@@ -20,3 +20,6 @@ Maps out the four primary design possibilities of object constructor lifecycles 
 Contrasts the execution paths of method overriding with and without the `super()` keyword.
 * **Key Concept**: Preventing a `RecursionError` infinite loop by using `super()` as an execution safety bridge to the parent class.
 
+### 4. ⚡ Circuit Impedance Analyzer (`circuit Analyzer.py`)
+Bridges electrical physics formulas with object-oriented property encapsulation and polymorphism contracts.
+* **Key Concept**: Utilizing explicit public getter methods to access locked attributes while overriding fallback parent methods for Resistors, Capacitors, and Inductors.
