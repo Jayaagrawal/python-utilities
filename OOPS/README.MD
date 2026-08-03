@@ -23,3 +23,16 @@ Contrasts the execution paths of method overriding with and without the `super()
 ### 4. ⚡ Circuit Impedance Analyzer (`circuit Analyzer.py`)
 Bridges electrical physics formulas with object-oriented property encapsulation and polymorphism contracts.
 * **Key Concept**: Utilizing explicit public getter methods to access locked attributes while overriding fallback parent methods for Resistors, Capacitors, and Inductors.
+
+
+# 5 Python Polymorphism Practice(payment_processor.py)
+
+A hands-on exercise demonstrating **Method Overriding** and **Runtime Polymorphism** using an e-commerce checkout simulation.
+
+## 📁 Files
+* `payment_processor.py`: Implements a flexible checkout system handling mixed payment objects.
+
+## 💡 Key Takeaways
+1. **Dynamic Interface**: The `execute_checkout()` function interacts with Credit Card, PayPal, and Bitcoin objects identically without using type checking (`if/elif`).
+2. **Method Overriding**: Each subclass redefines the parent `process_payment()` method to execute its own logic.
+3. **Safety Contracts**: Raising a `NotImplementedError` in the base class acts as a safety wire, blocking incomplete implementations (like the `StripePayment` test case) from failing silently.
