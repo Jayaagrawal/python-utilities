@@ -36,3 +36,13 @@ A hands-on exercise demonstrating **Method Overriding** and **Runtime Polymorphi
 1. **Dynamic Interface**: The `execute_checkout()` function interacts with Credit Card, PayPal, and Bitcoin objects identically without using type checking (`if/elif`).
 2. **Method Overriding**: Each subclass redefines the parent `process_payment()` method to execute its own logic.
 3. **Safety Contracts**: Raising a `NotImplementedError` in the base class acts as a safety wire, blocking incomplete implementations (like the `StripePayment` test case) from failing silently.
+
+## 🔌 6: Electrical Circuit Composition (Circuit_composition.py)
+
+A hands-on exercise demonstrating **Object Composition** and **Encapsulated Lifecycle Ownership** using an electrical circuit simulation.
+
+
+## 💡 Key Takeaways
+1. **Has-A Relationship**: The `Circuit` class acts as an orchestrator, containing and managing independent `PowerSource` and `Resistor` objects rather than inheriting from them.
+2. **Lifecycle Ownership**: Instantiating the `PowerSource` directly inside the `Circuit` constructor establishes strict composition, meaning the component objects are tied to the circuit's existence.
+3. **Division-by-Zero Guard**: Implementing a deliberate conditional check inside the calculation loop serves as a safety wire, blocking system crashes if a user runs calculations with zero resistors.
