@@ -71,3 +71,14 @@ A hands-on exercise demonstrating **Multiple Inheritance** and **Cooperative Met
 1. **Horizontal Architecture**: Multiple inheritance allows a single class (`Sportcar`) to inherit directly from distinct, independent parent tracks (`Fuelsystem` and `Electronics`) simultaneously.
 2. **Cooperative `super()` Calls**: Placing `super().start()` in every subsystem method ensures that sibling tracks pass control sideways to one another, preventing the root `Engine.start()` from firing prematurely or running twice.
 3. **MRO Precedence Rules**: Python resolves the diamond structure linearly using **Method Resolution Order**. Parent inputs must be declared from most specific subclass to most general ancestor to prevent compiler crashes.
+
+
+## 8: Polymorphic Media Player Subsystem (mediastreaming.py)
+
+A hands-on implementation demonstrating Method Overriding and Pythonic Method Overloading within a digital streaming environment.
+
+
+## 💡 Key Takeaways
+ **Method Overriding (Runtime)**: Demonstrated by `PremiumPlayer` redefining the inherited `stream_video()` method from `BasicPlayer`. This alters the implementation behavior at runtime while keeping the identical method signature.
+2. **Method Overloading (Pythonic)**: Achieved within `MediaPlaylist.add_media()` by utilizing optional default arguments (`= None`). This creates a flexible interface that processes multiple different input types under a single method name.
+3. **Conditional Priority**: When grouping optional arguments, evaluation checks must flow from the most specific/restrictive condition (`title and media_id`) down to generic parameters to prevent the conditional tree from short-circuiting.
