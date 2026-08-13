@@ -82,3 +82,13 @@ A hands-on implementation demonstrating Method Overriding and Pythonic Method Ov
  **Method Overriding (Runtime)**: Demonstrated by `PremiumPlayer` redefining the inherited `stream_video()` method from `BasicPlayer`. This alters the implementation behavior at runtime while keeping the identical method signature.
 2. **Method Overloading (Pythonic)**: Achieved within `MediaPlaylist.add_media()` by utilizing optional default arguments (`= None`). This creates a flexible interface that processes multiple different input types under a single method name.
 3. **Conditional Priority**: When grouping optional arguments, evaluation checks must flow from the most specific/restrictive condition (`title and media_id`) down to generic parameters to prevent the conditional tree from short-circuiting.
+
+
+## 9: Advanced Wearable Health Tracker (`healthtracker_encapsulation.py`)
+
+A hands-on exercise demonstrating data encapsulation using Pythonic `@property` gateways and explicit runtime type and value sanitisation.
+
+## 💡 Key Takeaways
+1. **Property Gateway Separation**: Internal storage attributes utilize a protected single-underscore convention (`self._heart_rate`), keeping them independent of the public property gateway method name (`heart_rate`).
+2. **Runtime Type Enforcement**: Type hints are strictly informational. True runtime type-safety is established using the built-in `isinstance(variable, int)` tool within an `if/elif/else` structure to intercept non-integer data before a calculation crash occurs.
+3. **Boundary Firewalls**: Setter methods function as structural data checkpoints, validating modifications against physical safe limits (40 to 220 BPM) before updating hidden memory slots.
